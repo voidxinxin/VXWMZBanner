@@ -2,10 +2,11 @@ PODS:
   - SDWebImage (5.8.4):
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
-  - VXWMZBanner (0.1.0):
+  - VXWMZBanner (0.2.0):
     - SDWebImage
 
 DEPENDENCIES:
+  - SDWebImage
   - VXWMZBanner (from `../`)
 
 SPEC REPOS:
@@ -18,8 +19,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
-  VXWMZBanner: 2865eaff219cb11cf39d77ffc3ea91e240ffdc33
+  VXWMZBanner: b91e6dafbdcb1ea0543b165c0d89df29c21da62d
 
-PODFILE CHECKSUM: 17324db4ea773d21386a61ff166ae7beb4cc3533
+PODFILE CHECKSUM: 393c3b278889e9800734bc465759b26dd5060e7b
 
 COCOAPODS: 1.9.0
