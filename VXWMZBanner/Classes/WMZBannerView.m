@@ -328,13 +328,23 @@
         if (OffsetY >self.myCollectionV.contentSize.height) {
             OffsetY = self.myCollectionV.contentSize.height/2;
         }
-        [self.myCollectionV setContentOffset:CGPointMake(self.myCollectionV.contentOffset.x, OffsetY) animated:NO];
+        //[self.myCollectionV setContentOffset:CGPointMake(self.myCollectionV.contentOffset.x, OffsetY) animated:NO];
+        //由voidxin添加，坚决自动滚动时的卡顿问题
+        __weak typeof(self) wself = self;
+        [UIView animateWithDuration:1 delay:0.1 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+            [wself.myCollectionV setContentOffset:CGPointMake(wself.myCollectionV.contentOffset.x, OffsetY) animated:NO];
+        } completion:nil];
     }else{
         CGFloat OffsetX = self.myCollectionV.contentOffset.x + self.param.wMarqueeRate;
         if (OffsetX >self.myCollectionV.contentSize.width) {
             OffsetX = self.myCollectionV.contentSize.width/2;
         }
-        [self.myCollectionV setContentOffset:CGPointMake(OffsetX, self.myCollectionV.contentOffset.y) animated:NO];
+        //由voidxin添加，坚决自动滚动时的卡顿问题
+        __weak typeof(self) wself = self;
+        [UIView animateWithDuration:1 delay:0.1 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+            [wself.myCollectionV setContentOffset:CGPointMake(OffsetX, wself.myCollectionV.contentOffset.y) animated:NO];
+        } completion:nil];
+        
     }
 }
 
