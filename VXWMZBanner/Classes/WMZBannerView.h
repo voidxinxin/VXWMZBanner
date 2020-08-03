@@ -7,8 +7,8 @@
 //
 
 #import "WMZBannerParam.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 NS_ASSUME_NONNULL_BEGIN
-
 @interface WMZBannerView : UIView
 //背景图
 @property(strong,nonatomic)UIImageView *bgImgView;

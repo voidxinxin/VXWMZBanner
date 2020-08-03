@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VXWMZBanner'
-  s.version          = '0.2.0'
+  s.version          = '0.4.0'
   s.summary          = 'my banner tool'
 
 # This description is used to generate tags and improve search results.

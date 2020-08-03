@@ -11,7 +11,7 @@
 #ifndef WMZBannerConfig_h
 #define WMZBannerConfig_h
 
-#import "UIImageView+WebCache.h"
+#import <SDWebImage/UIView+WebCache.h>
 #import <UIKit/UIKit.h>
 
 #define BannerWitdh  [UIScreen mainScreen].bounds.size.width
