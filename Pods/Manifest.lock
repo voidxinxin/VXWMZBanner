@@ -1,0 +1,25 @@
+PODS:
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+  - VXWMZBanner (0.1.0):
+    - SDWebImage
+
+DEPENDENCIES:
+  - VXWMZBanner (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  VXWMZBanner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  VXWMZBanner: 2865eaff219cb11cf39d77ffc3ea91e240ffdc33
+
+PODFILE CHECKSUM: 17324db4ea773d21386a61ff166ae7beb4cc3533
+
+COCOAPODS: 1.9.0
