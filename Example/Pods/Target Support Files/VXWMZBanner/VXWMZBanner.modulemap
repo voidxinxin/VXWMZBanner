@@ -1,0 +1,6 @@
+framework module VXWMZBanner {
+  umbrella header "VXWMZBanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

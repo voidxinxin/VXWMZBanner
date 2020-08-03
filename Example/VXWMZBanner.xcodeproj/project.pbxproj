@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D92314408E1FF1DE57262A3 /* VXWMZBanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VXWMZBanner.podspec; path = ../VXWMZBanner.podspec; sourceTree = "<group>"; };
-		20B0A1640D5879ECE5F798A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1D92314408E1FF1DE57262A3 /* VXWMZBanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VXWMZBanner.podspec; path = ../VXWMZBanner.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		20B0A1640D5879ECE5F798A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		365BC3385D5E46539FAAB095 /* Pods_VXWMZBanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VXWMZBanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* VXWMZBanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VXWMZBanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		970F2892F1E782BFA50922A9 /* Pods-VXWMZBanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VXWMZBanner_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VXWMZBanner_Tests/Pods-VXWMZBanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9768E1B518DDE73DFCBD5A05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9768E1B518DDE73DFCBD5A05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		ACA508BC5F07F22FDAD5611D /* Pods-VXWMZBanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VXWMZBanner_Tests.release.xcconfig"; path = "Target Support Files/Pods-VXWMZBanner_Tests/Pods-VXWMZBanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F5296E707BC18AAE8F530710 /* Pods-VXWMZBanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VXWMZBanner_Example.release.xcconfig"; path = "Target Support Files/Pods-VXWMZBanner_Example/Pods-VXWMZBanner_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F5886C7885BD438A2459B5A7 /* Pods-VXWMZBanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VXWMZBanner_Example.debug.xcconfig"; path = "Target Support Files/Pods-VXWMZBanner_Example/Pods-VXWMZBanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				970F2892F1E782BFA50922A9 /* Pods-VXWMZBanner_Tests.debug.xcconfig */,
 				ACA508BC5F07F22FDAD5611D /* Pods-VXWMZBanner_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,10 +346,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VXWMZBanner_Example/Pods-VXWMZBanner_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/VXWMZBanner/VXWMZBanner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VXWMZBanner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
